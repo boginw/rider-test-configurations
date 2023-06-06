@@ -1,0 +1,11 @@
+<idea-plugin>
+    <id>github.boginw.rider-test-configurations</id>
+    <name>Rider Temporary Test Configurations</name>
+    <vendor email="bogi.wennerstrom@gmail.com">Bogi N. W.</vendor>
+    <description>Selects test configurations as soon as they are created</description>
+    <depends>com.intellij.modules.platform</depends>
+    <projectListeners>
+        <listener class="github.boginw.riderTemporaryTestConfigurations.TestConfigurationSelectorRunManagerListener"
+                  topic="com.intellij.execution.RunManagerListener"/>
+    </projectListeners>
+</idea-plugin>
